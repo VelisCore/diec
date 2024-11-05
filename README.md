@@ -2,7 +2,7 @@
   
 # diec
 
-[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/D-I-Projects/diec#license)  [![PyPi](https://img.shields.io/badge/PyPi%20Link-FFFF00)](https://pypi.org/project/diec/)  <a href="https://github.com/D-I-Projects/diec/blob/master/CONTRIBUTING.md"> <img src="https://img.shields.io/github/contributors-anon/D-I-Projects/diec" alt="Contributors badge" /></a>  [![Downloads](https://static.pepy.tech/badge/diec)](https://pepy.tech/project/diec)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/Eldritchyl/diec#license)  [![PyPi](https://img.shields.io/badge/PyPi%20Link-FFFF00)](https://pypi.org/project/diec/)  <a href="https://github.com/D-I-Projects/diec/blob/master/CONTRIBUTING.md"> <img src="https://img.shields.io/github/contributors-anon/D-I-Projects/diec" alt="Contributors badge" /></a>  [![Downloads](https://static.pepy.tech/badge/diec)](https://pepy.tech/project/diec)
 
 ```pip install diec``` 
 
@@ -10,7 +10,7 @@
 
 A tool that encodes text and gives out a key that you can decode with this program too!
 
-Our official test UI : [diec-test-gui](https://github.com/D-I-Projects/diec-test-gui)
+Our official test UI : [diec-test-gui](https://github.com/Eldritchyl/diec-test-gui)
 
 ## Installation
 
@@ -31,9 +31,9 @@ encode("I love python and I love to learn new things here too! <3")
 ```
 ### Output
 
-The Key you created : <a href="https://github.com/D-I-Projects/diec/blob/main/diec_example/key.diec">key.diec</a>
+The Key you created : <a href="https://github.com/Eldritchyl/diec/blob/main/diec_example/key.diec">key.diec</a>
 
-The encoded text : <a href="https://github.com/D-I-Projects/diec/blob/main/diec_example/encoded.diec">encoded.diec</a>
+The encoded text : <a href="https://github.com/Eldritchyl/diec/blob/main/diec_example/encoded.diec">encoded.diec</a>
 
 **Both of them will appear in your current directory**
 
