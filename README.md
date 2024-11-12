@@ -1,3 +1,4 @@
+
 <div align="center">
   
 # diec
@@ -8,9 +9,9 @@
 
 </div>
 
-A tool that encodes text and gives out a key that you can decode with this program too!
+A tool for encoding and decoding text with a passphrase. Encrypt text into a secure format and decrypt it later using the same key.
 
-Our official test UI : [diec-test-gui](https://github.com/Eldritchyl/diec-test-gui)
+Official test UI: [diec-test-gui](https://github.com/Eldritchyl/diec-test-gui)
 
 ## Installation
 
@@ -18,80 +19,52 @@ Our official test UI : [diec-test-gui](https://github.com/Eldritchyl/diec-test-g
 pip install diec
 ```
 
-# Example
+## Usage
 
-<hr>
+### Encrypt Text
 
-## encode()
-
-```python
-from diec.encoder import encode
-
-encode("I love python and I love to learn new things here too! <3")
-```
-### Output
-
-The Key you created : <a href="https://github.com/Eldritchyl/diec/blob/main/diec_example/key.diec">key.diec</a>
-
-The encoded text : <a href="https://github.com/Eldritchyl/diec/blob/main/diec_example/encoded.diec">encoded.diec</a>
-
-**Both of them will appear in your current directory**
-
-<hr>
-
-## decode()
-
-```python
-from diec.decoder import decode
-
-decode() # The key.diec and encoded.diec files have to be in the same directory as the file that runs this command.
-```
-### Output
-```bash
-I love python and I love to learn new things here too! <3
-```
-<hr>
-
-## CLI Tutorial
-
-The Diec CLI (Command Line Interface) allows you to easily encode and decode text via the terminal.
-
-### Installation
-
-Make sure Diec is installed:
+To encode text, use the `encode-text` command:
 
 ```bash
-pip install diec
+python cli.py encode-text "This is the text to encode" --passphrase "your_passphrase"
 ```
 
-### Using the CLI
+This will encrypt the provided text using the given passphrase.
 
-After installation, you can use the following commands:
+### Decrypt Text
 
-1. **Encode Text**:
+To decode previously encrypted text, use the `decode-text` command:
 
-   To encode a text, use the `encode_cli` command. Provide the desired text in quotes:
+```bash
+python cli.py decode-text --passphrase "your_passphrase"
+```
 
-   ```bash
-   python -m diec encode-cli "Your text here"
-   ```
+This will decrypt the text and print the original message, using the same passphrase used during encryption.
 
-   **Example**:
+## CLI Commands
 
-   ```bash
-   python -m diec encode-cli "I love Python and learning new things! <3"
-   ```
+### `encode-text`
 
-   After running this command, a key file (`key.diec`) and an encoded file (`encoded.diec`) will be created in your current directory.
+Encodes the provided text with a passphrase.
 
-2. **Decode Text**:
+```bash
+python cli.py encode-text <text> --passphrase <passphrase>
+```
 
-   To decode an encoded text, use the `decode_cli` command:
+### `decode-text`
 
-   ```bash
-   python -m diec decode-cli
-   ```
+Decodes the previously encoded text using the provided passphrase.
 
-   Make sure that the `key.diec` and `encoded.diec` files are in the same directory as the script you run.
+```bash
+python cli.py decode-text --passphrase <passphrase>
+```
+
+## License
+
+MIT License. See [LICENSE](LICENSE) for details.
 
 ---
+
+Author: **Eldritchy**  
+Email: [eldritchy.help@gmail.com](mailto:eldritchy.help@gmail.com)  
+GitHub: [https://github.com/Eldritchyl](https://github.com/Eldritchyl)
