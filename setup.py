@@ -31,4 +31,7 @@ setup(
         [console_scripts]
         diec-cli=diec.cli:cli
     ''',
+    dependency_links=[
+        "https://github.com/Eldritchy/diec/packages"
+    ],
 )
