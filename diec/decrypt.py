@@ -1,8 +1,9 @@
-import hashlib
+from argon2 import PasswordHasher
 import random
 
 def generate_key(passphrase):
-    return hashlib.sha256(passphrase.encode()).digest()
+    ph = PasswordHasher()
+    return ph.hash(passphrase)
 
 def decrypt(encrypted_data, passphrase):
     key = generate_key(passphrase)
