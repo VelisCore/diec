@@ -18,6 +18,7 @@ setup(
     keywords=['diec', 'encoding', 'decoding'],
     install_requires=[
         'binaryconvert',
+        'argon2',
     ],
     python_requires='>=3.9',
     classifiers=[
