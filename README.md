@@ -3,7 +3,7 @@
   
 # diec
 
-[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/Eldritchy/diec#license)  [![PyPi](https://img.shields.io/badge/PyPi%20Link-FFFF00)](https://pypi.org/project/diec/)  <a href="https://github.com/D-I-Projects/diec/blob/master/CONTRIBUTING.md"> <img src="https://img.shields.io/github/contributors-anon/Eldritchy/diec" alt="Contributors badge" /></a>  [![Downloads](https://static.pepy.tech/badge/diec)](https://pepy.tech/project/diec)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/VelisCore/diec#license)  [![PyPi](https://img.shields.io/badge/PyPi%20Link-FFFF00)](https://pypi.org/project/diec/)  <a href="https://github.com/VelisCore/diec/blob/master/CONTRIBUTING.md"> <img src="https://img.shields.io/github/contributors-anon/VelisCore/diec" alt="Contributors badge" /></a>  [![Downloads](https://static.pepy.tech/badge/diec)](https://pepy.tech/project/diec)
 
 ```pip install diec``` 
 
@@ -11,7 +11,7 @@
 
 A tool for encoding and decoding text with a passphrase. Encrypt text into a secure format and decrypt it later using the same key.
 
-Official test UI: [diec-test-gui](https://github.com/Eldritchyl/diec-test-gui)
+Official test UI: [diec-test-gui](https://github.com/VelisCore/diec-test-gui)
 
 ## Installation
 
@@ -67,4 +67,4 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 Author: **Eldritchy**  
 Email: [eldritchy.help@gmail.com](mailto:eldritchy.help@gmail.com)  
-GitHub: [https://github.com/Eldritchyl](https://github.com/Eldritchyl)
+GitHub: [https://github.com/Eldritchyl](https://github.com/VelisCore)
