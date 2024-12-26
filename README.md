@@ -5,59 +5,71 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/VelisCore/diec#license)  [![PyPi](https://img.shields.io/badge/PyPi%20Link-FFFF00)](https://pypi.org/project/diec/)  <a href="https://github.com/VelisCore/diec/blob/master/CONTRIBUTING.md"> <img src="https://img.shields.io/github/contributors-anon/VelisCore/diec" alt="Contributors badge" /></a>  [![Downloads](https://static.pepy.tech/badge/diec)](https://pepy.tech/project/diec)
 
-```pip install diec``` 
+```bash
+pip install diec
+``` 
 
 </div>
 
-A tool for encoding and decoding text with a passphrase. Encrypt text into a secure format and decrypt it later using the same key.
+**diec** is a powerful and user-friendly command-line tool for securely encrypting and decrypting text using AES-GCM encryption. Store sensitive information in a secure format and retrieve it when needed using a passphrase.
 
-Official test UI: [diec-test-gui](https://github.com/VelisCore/diec-test-gui)
+---
 
 ## Installation
+
+Install **diec** via pip:
 
 ```bash
 pip install diec
 ```
 
+---
+
+## Features
+
+- **Secure Encryption**: Uses AES-GCM with a passphrase-derived key for secure data encryption.
+- **Simple Decryption**: Easily decrypt your data with the same passphrase.
+- **Customizable**: Save and load encrypted files with customizable file paths.
+
+---
+
 ## Usage
 
-### Encrypt Text
-
-To encode text, use the `encode-text` command:
+Run the CLI tool via Python:
 
 ```bash
-python cli.py encode-text "This is the text to encode" --passphrase "your_passphrase"
+python cli.py [COMMAND] [OPTIONS]
 ```
 
-This will encrypt the provided text using the given passphrase.
+### 1. Encrypt Text (`encode` command)
 
-### Decrypt Text
-
-To decode previously encrypted text, use the `decode-text` command:
+Encrypt your text with a passphrase and save it to a file:
 
 ```bash
-python cli.py decode-text --passphrase "your_passphrase"
+python cli.py encode "Your sensitive text here" --passphrase "your_secure_passphrase" --output "output_file.diec"
 ```
 
-This will decrypt the text and print the original message, using the same passphrase used during encryption.
+- **Arguments**:
+  - `text`: The text to encrypt (required).
+- **Options**:
+  - `--passphrase`: Passphrase to secure your data (required; hidden input).
+  - `--output`: File path to save the encrypted data (default: `encrypted_data.diec`).
 
-## CLI Commands
+---
 
-### `encode-text`
+### 2. Decrypt Text (`decode` command)
 
-Encodes the provided text with a passphrase.
+Decrypt your previously encrypted file with a passphrase:
 
 ```bash
-python cli.py encode-text <text> --passphrase <passphrase>
+python cli.py decode --passphrase "your_secure_passphrase" --input "output_file.diec"
 ```
 
-### `decode-text`
+- **Options**:
+  - `--passphrase`: Passphrase used during encryption (required; hidden input).
+  - `--input`: File path to the encrypted data (default: `encrypted_data.diec`).
 
-Decodes the previously encoded text using the provided passphrase.
-
-```bash
-python cli.py decode-text --passphrase <passphrase>
-```
+---
 
 ## License
 

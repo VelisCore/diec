@@ -13,12 +13,14 @@ setup(
     author_email='eldritchy.help@gmail.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/Eldritchyl/diec',
+    url='https://github.com/Eldritchy/diec',
     download_url='https://github.com/Eldritchy/diec/archive/refs/tags/v3.2.tar.gz',
     keywords=['diec', 'encoding', 'decoding'],
     install_requires=[
         'binaryconvert',
         'argon2',
+        'cryptography',
+        'click',
     ],
     python_requires='>=3.9',
     classifiers=[
@@ -28,10 +30,14 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.9',
     ],
-    entry_points='''
-        [console_scripts]
-        diec-cli=diec.cli:cli
-    ''',
+    entry_points={
+        'console_scripts': [
+            'diec-cli=diec.cli:cli',
+        ],
+        'distutils.commands': [
+            'diec = diec.cli:main',
+        ],
+    },
     dependency_links=[
         "https://github.com/Eldritchy/diec/packages"
     ],
