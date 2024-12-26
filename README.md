@@ -3,10 +3,7 @@
 
 # **diec** 🔐
 
-[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/VelisCore/diec#license)  
-[![PyPi](https://img.shields.io/badge/PyPi%20Link-FFFF00)](https://pypi.org/project/diec/)  
-[![Contributors](https://img.shields.io/github/contributors-anon/VelisCore/diec)](https://github.com/VelisCore/diec/graphs/contributors)  
-[![Downloads](https://static.pepy.tech/badge/diec)](https://pepy.tech/project/diec)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/VelisCore/diec#license)  [![PyPi](https://img.shields.io/badge/PyPi%20Link-FFFF00)](https://pypi.org/project/diec/)  [![Contributors](https://img.shields.io/github/contributors-anon/VelisCore/diec)](https://github.com/VelisCore/diec/graphs/contributors)  [![Downloads](https://static.pepy.tech/badge/diec)](https://pepy.tech/project/diec)
 
 **Encrypt and decrypt text securely with your own passphrase.**
 
@@ -148,16 +145,6 @@ If you need to store sensitive data locally (such as API keys, passwords, etc.),
 
 ---
 
-## **📅 Release Notes**
-
-### **v3.2**
-
-- **Added passphrase confirmation**: To ensure users don’t accidentally enter incorrect passphrases during encryption and decryption.
-- **Improved error handling**: Enhanced error messages to make it easier to identify issues during encryption/decryption.
-- **CLI usability improvements**: More clear prompts and options, better documentation.
-
----
-
 ## **🔒 License**
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
@@ -167,8 +154,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## **👨‍💻 Author**
 
 **Eldritchy**  
-[GitHub: @Eldritchyl](https://github.com/Eldritchyl)  
-[Email: eldrity.help@gmail.com](mailto:eldritchy.help@gmail.com)
+[GitHub: @Velis](https://github.com/VelisCore)  
+[Email: velis.help@web.de](mailto:velis.help@web.de)
 
 ---
 
