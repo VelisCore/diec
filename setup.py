@@ -9,7 +9,7 @@ setup(
     packages=find_packages(),
     license='MIT',
     description='A tool that encodes text and provides a key for decoding!',
-    author='VelisCOre',
+    author='VelisCore',
     author_email='velis.help@web.de',
     long_description=long_description,
     long_description_content_type="text/markdown",
