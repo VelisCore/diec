@@ -9,13 +9,13 @@ setup(
     packages=find_packages(),
     license='MIT',
     description='A tool that encodes text and provides a key for decoding!',
-    author='Eldritchy',
-    author_email='eldritchy.help@gmail.com',
+    author='VelisCOre',
+    author_email='velis.help@web.de',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/Eldritchy/diec',
-    download_url='https://github.com/Eldritchy/diec/archive/refs/tags/v3.2.tar.gz',
-    keywords=['diec', 'encoding', 'decoding'],
+    url='https://github.com/VelisCore/diec',
+    download_url='https://github.com/VelisCore/diec/archive/refs/tags/v3.2.tar.gz',
+    keywords=['diec', 'encoding', 'decoding', 'Velis'],
     install_requires=[
         'binaryconvert',
         'argon2',
@@ -39,6 +39,6 @@ setup(
         ],
     },
     dependency_links=[
-        "https://github.com/Eldritchy/diec/packages"
+        "https://github.com/VelisCore/diec/packages"
     ],
 )
